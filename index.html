@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himpunan Mahasiswa Teknik Elektro ITERA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --secondary: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f5f9;
+        }
+        
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.9) 0%, rgba(16, 185, 129, 0.9) 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer-link:hover {
+            color: var(--primary);
+        }
+        
+        .animate-slow-bounce {
+            animation: bounce 3s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 shadow-md py-3">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40" alt="Logo Himpunan Mahasiswa Teknik Informatika" class="h-10 w-10 rounded-full">
+                <div>
+                    <h1 class="text-lg font-bold text-gray-800">HME</h1>
+                    <p class="text-xs text-gray-600">Teknik ELEKTRO</p>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-sm font-medium text-gray-800 hover:text-blue-500 transition">Beranda</a>
+                <a href="#about" class="text-sm font-medium text-gray-800 hover:text-blue-500 transition">Tentang</a>
+                <a href="#program" class="text-sm font-medium text-gray-800 hover:text-blue-500 transition">Program</a>
+                <a href="#gallery" class="text-sm font-medium text-gray-800 hover:text-blue-500 transition">Galeri</a>
+                <a href="#contact" class="text-sm font-medium text-gray-800 hover:text-blue-500 transition">Kontak</a>
+            </div>
+            
+            <button class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero pt-24 pb-16 md:pt-32 md:pb-24 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Himpunan Mahasiswa Elektro</h1>
+                <p class="text-lg mb-6">Mewadahi aspirasi, mengembangkan potensi, dan membangun jejaring antar mahasiswa Teknik Elektro ITERA.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition">Gabung Sekarang</button>
+                    <button class="bg-transparent border border-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-blue-600 transition">Pelajari Lebih</button>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center animate-slow-bounce">
+                <img src="https://placehold.co/500x400" alt="Mahasiswa sedang belajar bersama di laboratorium komputer dengan suasana kolaboratif" class="rounded-xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Partners Section -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://placehold.co/120x80" alt="Logo Intitut Teknologi Sumatera" class="h-16 opacity-80 hover:opacity-100 transition">
+                <img src="https://placehold.co/120x80" alt="Logo Fakultas Teknologi Industri ITERA" class="h-16 opacity-80 hover:opacity-100 transition">
+                <img src="https://placehold.co/120x80" alt="Logo Program Studi Teknik Elektro" class="h-16 opacity-80 hover:opacity-100 transition">
+                <img src="https://placehold.co/120x80" alt="Logo Kemendikbud RI" class="h-16 opacity-80 hover:opacity-100 transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">HME merupakan wadah resmi mahasiswa teknik elektro untuk mengembangkan diri dan berkontribusi untuk kemajuan bersama.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition cursor-pointer">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Visi</h3>
+                    <p class="text-gray-600">Menjadi himpunan mahasiswa yang unggul dalam pengembangan kompetensi dan karakter mahasiswa elektro.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition cursor-pointer">
+                    <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bullseye text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Misi</h3>
+                    <p class="text-gray-600">Mengembangkan potensi akademik dan non-akademik, memperkuat jejaring, dan meningkatkan kontribusi untuk masyarakat.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition cursor-pointer">
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-star text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Nilai</h3>
+                    <p class="text-gray-600">Integritas, Kolaborasi, Inovasi, dan Kontribusi menjadi nilai utama dalam setiap aktivitas kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Program Unggulan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Berbagai program yang dirancang untuk pengembangan diri mahasiswa informatika.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover transition">
+                    <img src="https://placehold.co/400x250" alt="Workshop pengembangan web modern" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">Tech Workshop</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pelatihan intensif teknologi terbaru dengan mentor berpengalaman.</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Skill Development</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover transition">
+                    <img src="https://placehold.co/400x250" alt="Kompetisi hackathon dengan peserta serius bekerja" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">Hackathon</h3>
+                        <p class="text-gray-600 text-sm mb-4">Kompetisi pemrograman untuk mengasah kemampuan problem solving.</p>
+                        <span class="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Competition</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover transition">
+                    <img src="https://placehold.co/400x250" alt="Sosialisasi komunitas teknologi di ruang seminar" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">Community Gathering</h3>
+                        <p class="text-gray-600 text-sm mb-4">Acara networking dengan alumni dan profesional di bidang IT.</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Networking</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover transition">
+                    <img src="https://placehold.co/400x250" alt="Kegiatan sosial mahasiswa di masyarakat" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg mb-2">Social Project</h3>
+                        <p class="text-gray-600 text-sm mb-4">Implementasikan ilmu untuk memberi dampak positif kepada masyarakat.</p>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gradient-to-r from-blue-600 to-green-500 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <div class="text-sm uppercase tracking-wider">Anggota</div>
+                </div>
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2">30+</div>
+                    <div class="text-sm uppercase tracking-wider">Kegiatan/Tahun</div>
+                </div>
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2">15+</div>
+                    <div class="text-sm uppercase tracking-wider">Mitra</div>
+                </div>
+                <div class="py-4">
+                    <div class="text-4xl font-bold mb-2">10+</div>
+                    <div class="text-sm uppercase tracking-wider">Penghargaan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Galeri Kegiatan</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Dokumentasi momen berharga dari berbagai aktivitas HMIF.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="https://placehold.co/300x200" alt="Seminar teknologi dengan pembicara sedang presentasi di depan peserta" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+                <img src="https://placehold.co/300x200" alt="Sekelompok mahasiswa sedang bekerja bersama di depan laptop" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+                <img src="https://placehold.co/300x200" alt="Kegiatan outdoor dengan panitia menggunakan kaos HMIF" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+                <img src="https://placehold.co/300x200" alt="Penyerahan penghargaan di panggung dengan backdrop logo HMIF" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+                <img src="https://placehold.co/300x200" alt="Diskusi kelompok di ruang meeting dengan whiteboard penuh coretan ide" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+                <img src="https://placehold.co/300x200" alt="Sesi foto bersama setelah acara dengan semua peserta tersenyum" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+                <img src="https://placehold.co/300x200" alt="Pelatihan coding intensif dengan mentor menjelaskan di layar proyektor" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+                <img src="https://placehold.co/300x200" alt="Kunjungan industri ke perusahaan teknologi modern" class="rounded-lg object-cover h-full w-full hover:scale-105 transition cursor-pointer">
+            </div>
+            
+            <div class="text-center mt-8">
+                <button class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-full text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition">
+                    Lihat Semua Galeri
+                    <i class="fas fa-chevron-right ml-2 text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Apa Kata Mereka?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Testimoni dari anggota, alumni, dan mitra HME.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50" alt="Foto profil alumni" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Budi Santoso</h4>
+                            <p class="text-sm text-gray-500">Alumni, Software Engineer di Gojek</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"HMIF memberikan saya jaringan dan pengalaman berharga yang sangat membantu karir saya di bidang teknologi."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50" alt="Foto profil mitra" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rina Wijaya</h4>
+                            <p class="text-sm text-gray-500">HRD, Tech Company</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Lulusan dari HME selalu menunjukkan kemampuan teknis yang kuat dan softskill yang baik."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50" alt="Foto profil anggota aktif" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Andi Pratama</h4>
+                            <p class="text-sm text-gray-500">Anggota Aktif</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Bergabung dengan HME memberi saya banyak kesempatan belajar di luar kelas dan teman-teman seprofesi."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Silakan hubungi kami untuk informasi lebih lanjut tentang keanggotaan, kegiatan, atau kolaborasi.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Informasi Kontak</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-blue-400"></i>
+                            <div>
+                                <h4 class="font-medium">Alamat</h4>
+                                <p class="text-gray-300">Gedung Student Center Lt. 3, Universitas Kita, Jl. Pendidikan No. 1, Kota Kita</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-4 text-blue-400"></i>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-300">hme@i.ac.id</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-4 text-blue-400"></i>
+                            <div>
+                                <h4 class="font-medium">Telepon</h4>
+                                <p class="text-gray-300">(021) 12345678</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Sosial Media</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-800 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block mb-1">Nama Lengkap</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-1">Subjek</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded font-medium transition">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/40x40" alt="Logo HMIF kecil" class="h-8 w-8 rounded-full mr-2">
+                        <h3 class="text-lg font-bold">HMIF</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Himpunan Mahasiswa Teknik Elektro merupakan organisasi kemahasiswaan di tingkat program studi.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Beranda</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Tentang Kami</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Program Kerja</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Galeri</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Program</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Tech Workshop</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Hackathon</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Community Gathering</a></li>
+                        <li><a href="#" class="footer-link text-gray-400 hover:text-white transition text-sm">Social Project</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-4">Berlangganan newsletter untuk mendapatkan informasi terbaru tentang kegiatan HME.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Email Anda" class="px-4 py-2 rounded-l bg-gray-700 text-white focus:outline-none w-full">
+                        
